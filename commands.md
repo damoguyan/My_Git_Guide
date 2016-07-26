@@ -50,3 +50,22 @@ $rm test.md
 $git rm test.rm
 (3)删错了
 $git checkout -- test.md
+
+
+远程仓库
+==============
+推送到远程(github)
+---------------------
+(1)第一次$ ssh-keygen -t rsa -C "youremail@example.com"  #将生成的公钥Key添加到自己github账户的ssh设置中
+(2)在github网站上创建repository，名字如My_Git_Guide
+(3)根据网站提示在自己电脑上分别运行下面命令
+$git remote add origin https://github.com/damoguyan/My_Git_Guide.git #把一个已有的本地仓库与之关联
+$git push -u origin master  #把当前分支master推送到远程 第一次加-u
+(4)后续本地有改动，推送到远程
+$git push origin master
+
+从远程clone
+--------------------
+$git clone git@github.com:damoguyan/bitcoinbook.git #Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快
+
+

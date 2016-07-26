@@ -16,3 +16,4 @@ $git  add file1 file2
 $git  commit -m "message"
 $git  status          #²Ö¿âµ±Ç°µÄ×´Ì¬
 $git  diff
+$git  log

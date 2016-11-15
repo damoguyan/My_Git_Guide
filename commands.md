@@ -1,7 +1,12 @@
-安装
+安装配置
 =====================
-$git config --global user.name "yourname"
+(1)名称 公开仓库时给别人看的
+$git config --global user.name "yourname"  //注意可以使用昵称以保护隐私
 $git  config --global user.email "your_email@XX.com"
+(2) 可以让命令输出拥有更高的可读性
+$git config --global color.ui auto
+(3)
+以上配置均保存在~/.gitconfig文件中，所以也可以直接创建或修改这个文件
 
 概念解释
 ===========================
